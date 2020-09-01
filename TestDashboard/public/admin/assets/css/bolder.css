@@ -1,0 +1,29 @@
+table {
+  font-size: 16px;
+  font-family: Optimum, Helvetica, sans-serif;
+  border-collapse:collapse
+}
+tr {
+    border-bottom: 1px solid #A9A9A9;
+}
+td {
+  padding: 4px;
+  margin: 3px;
+  padding-left: 20px;
+  width: 75%;
+  text-align: justify;
+}
+
+th {
+  background-color: #A9A9A9;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+
+td:first-child {
+  font-weight: bold;
+  width: 25%;
+  text-align: left;
+}
