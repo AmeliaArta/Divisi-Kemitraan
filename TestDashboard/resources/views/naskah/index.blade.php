@@ -5,7 +5,7 @@
 	<div class="main-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7" style=float:"center">
+				<div class="col-md-7" style="float: justify">
 					<div class="panel" >
 						<div class="panel-heading">
 							<h3 align="center" class="panel-title"><b>Naskah</b></h3>

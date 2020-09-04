@@ -7,8 +7,13 @@
       <div class="row">
         <div class="col-md-12">
           <div class="panel">
-                <div class="panel-heading" style="background: #F0FFF0; color:#000000;">
+                <div class="panel-heading" style="background: #5CAAFF; color:#000000;">
                   <h3 class="panel-title"><b>Daftar Kerjasama</b></h3>
+                  @if(auth()->user()->role == '1')
+                      <div class="right">
+                  <a href="/infokerjasama" class="btn btn-primary  btn-sm">Tambah Kerjasama</a>
+                  </div>  
+                  @endif
                      
                 </div>
 

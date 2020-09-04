@@ -5,7 +5,7 @@
 	<div class="main-content">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-9" style="float: justify">
 					<div class="panel">
 								<div class="panel-heading">
 									<center><h3 class="panel-title"><b>Upload Kerjasama</b></h3></center>
@@ -36,7 +36,6 @@
 
 							<div class="form-group">
 								 <label>Ruang Lingkup</label>
-								 <small>Ruang Lingkup</small>
 							<textarea name="deskripsi" class="form-control"></textarea>
 							</div>
 
@@ -50,22 +49,40 @@
 
 
 							<div class="form-group">
-									<label for="">Jenis Kerjasama</label>
-									<input type="text" name="jenis_kerjasama" class="form-control" placeholder="Masukan Kerjasama">
-
-							    </div>
-
-							<div class="form-group">
-									<label for="">Unit Pengelola</label>
-									<input type="text" name="unit_pengelola" class="form-control" placeholder="Masukan Unit Pengelola">
-
-							    </div>
+									<label for="exampleFormControlSelect2">Jenis Kerjasama</label>
+									<select name="jenis_dokumen" class="form-control" id="exampleFormControlSelect2">
+									<option>Silahkan Pilih</option>
+									<option value="Nota Kesepahaman (NK)">Nota Kesepahaman (NK)</option>
+									<option value="Perjanjian Kerjasama">PkS</option>
+									</select>
+							</div>
 
 							<div class="form-group">
-									<label for="">Status</label>
-									<input type="text" name="status" class="form-control" placeholder="Masukan Status">
+									<label for="exampleFormControlSelect2">Unit Pengelola</label>
+									<select name="jenis_dokumen" class="form-control" id="exampleFormControlSelect2">
+									<option>Silahkan Pilih</option>
+									<option value="Nota Kesepahaman (NK)">Fakultas</option>
+									<option value="Perjanjian Kerjasama">Institusi</option>
+									<option value="Perjanjian Kerjasama">Prodi</option>
+									<option value="Perjanjian Kerjasama">Wakil Rektor I</option>
+									<option value="Perjanjian Kerjasama">Wakil Rektor II</option>
+									<option value="Perjanjian Kerjasama">Wakil Rektor III</option>
+									<option value="Perjanjian Kerjasama">FITE (Fakultas Informatika dan Teknik Elektro)</option>
+									<option value="Perjanjian Kerjasama">FTI (Fakultas Teknik Industri)</option>
+									<option value="Perjanjian Kerjasama">FB (Fakultas Bioproses)</option>
+									<option value="Perjanjian Kerjasama">LPPM (Lembaga Penelitian dan Pengabdian Masyarakat)</option>
+									<option value="Perjanjian Kerjasama">LKHM (Lembaga Kemitraan dan Hubungan Masyarakat)</option>
+									</select>
+							</div>
 
-							    </div>
+							<div class="form-group">
+									<label for="exampleFormControlSelect2">Status</label>
+									<select name="jenis_dokumen" class="form-control" id="exampleFormControlSelect2">
+									<option>Silahkan Pilih</option>
+									<option value="Nota Kesepahaman (NK)">Masih Berjalan</option>
+									<option value="Perjanjian Kerjasama">Telah Berakhir</option>
+									</select>
+							</div>
 
 
 						  <div class="input-group">

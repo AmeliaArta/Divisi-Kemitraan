@@ -7,16 +7,16 @@
       <div class="row">
         <div class="col-md-12">
           <div class="panel">
-                <div class="panel-heading" style="background: #F0FFF0; color:#000000;">
+                <div class="panel-heading" style="background: #3395FF; color:#000000;">
                   <h3 class="panel-title"><b>Info Kerjasama</b></h3>
                      
                 </div>
 
                 </div>
-                <div class="panel-body">
+                <div class="panel">
                   <table class="table table-hover" id="myTable" style="background:#F0F8FF; color:#000000; outline: #F0F8FF; border-collapse: collapse;">
                     <thead>
-                      <tr style="background:#F0F8FF; color:#000000; outline: #F0F8FF">
+                      <tr style="background:#97C9FF; color:#000000; outline: #F0F8FF">
                         <th>TAHUN</th>
                         <th>TANGGAL MULAI</th>
                         <th>TANGGAL SELESAI</th>
