@@ -5,7 +5,7 @@
 	<div class="main-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7" style="float: justify">
+				<div class="col-md-9" style="float: justify">
 					<div class="panel" >
 						<div class="panel-heading">
 							<h3 align="center" class="panel-title"><b>Naskah</b></h3>
@@ -218,7 +218,7 @@
 																<select name="dosen[]" class="form-control" id="dosen">
 																	<option>Silahkan Pilih</option>
 																	@foreach($datas as $Dosen)
-																		<option value="{{$Dosen->id}}">{{$Dosen->nama}}</option>
+																		<option value="{{$Dosen->dosen_id}}">{{$Dosen->nama}}</option>
 																	@endforeach
 																</select>
 															</td>
@@ -376,7 +376,7 @@
                                 '<select name="dosen[]" style="width: 500px" placeholder="Pilih nama" id="dosen" required="required" >'+
                                     '<option></option>'+
                                     '@foreach($datas as $Dosen)'+
-                                    '<option value="{{$Dosen->id}}" >{{$Dosen->nama}}</option>'+
+                                    '<option value="{{$Dosen->dosen_id}}" >{{$Dosen->nama}}</option>'+
                                     '@endforeach'+
                                 '</select>'+                     
                                 

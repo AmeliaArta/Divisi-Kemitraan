@@ -23,7 +23,13 @@ class NaskahController extends Controller
     public function index()
     {
         
-        $datas = Dosen::all();
+        // $datas = Dosen::all();
+        $datas=DB::connection('mysql2')->table('hrdx_dosen')
+        ->Join('hrdx_pegawai', 'hrdx_pegawai.pegawai_id', '=', 'hrdx_dosen.pegawai_id')
+        ->select('hrdx_dosen.dosen_id', 'hrdx_pegawai.nama')
+        ->where('nama', '!=', '')
+        // ->where('status_aktif_pegawai_id', '=', '1')
+        ->get();
         return view('naskah.index',compact(['datas']));
     }
     
@@ -44,8 +50,13 @@ class NaskahController extends Controller
     public function edit1(Naskah $data)
    {
         
-        $datas = Dosen::all();
-
+        // $datas = Dosen::all();
+      $datas=DB::connection('mysql2')->table('hrdx_dosen')
+        ->Join('hrdx_pegawai', 'hrdx_pegawai.pegawai_id', '=', 'hrdx_dosen.pegawai_id')
+        ->select('hrdx_dosen.dosen_id', 'hrdx_pegawai.nama')
+        ->where('nama', '!=', '')
+        // ->where('status_aktif_pegawai_id', '=', '1')
+        ->get();
      return view('naskah.edit',compact(['datas','data']));
    }
 //function for store data yang di edit

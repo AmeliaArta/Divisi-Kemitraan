@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="brand">
     <a href="/dashboard">
-      <img src="admin/assets/img/test.png" alt="Logo Del" class="img-responsive logo">
+      <img src="/admin/assets/img/test.png" alt="Logo Del" class="img-responsive logo">
     </a>
   </div>
 

@@ -219,11 +219,11 @@
 						  <div class="form-group col-sm-7" id="dynamic_field1">
 
 
-						    <label for="exampleFormControlSelect2">Pihak Penalaah </label>
+						    <label for="exampleFormControlSelect2">Pihak Penelaah </label>
 						    <select name="dosen[]" class="form-control" id="dosen">
 						       <option>Silahkan Pilih</option>
 						       @foreach($datas as $Dosen)
-						       <option value="{{$Dosen->id}}">{{$Dosen->nama}}</option>
+						       <option value="{{$Dosen->dosen_id}}">{{$Dosen->nama}}</option>
 						       @endforeach
 						    </select>
 						    <button type="button" name="add" id="add" class="btn btn-success">+</button> 
@@ -236,11 +236,6 @@
 									<input type="text" name="masa_waktu_telaah" class="form-control" value="{{$data->masa_waktu_telaah}}" >
 
 									</div>
-
-
-
-
-
 
 								<div class="form-group col-sm-7">
 								 <label>Komentar</label>
@@ -389,10 +384,10 @@
            $('#dynamic_field1').append('<tr id="row'+i+'" class="dynamic-added">'+
                                 '<td>'+
                                 '<div>'+
-                                '<select name="dosen[]" style="width: 940px" placeholder="Pilih nama" id="dosen" required="required" >'+
+                                '<select name="dosen[]" style="width: 680px" placeholder="Pilih nama" id="dosen" required="required" >'+
                                     '<option></option>'+
                                     '@foreach($datas as $Dosen)'+
-                                    '<option value="{{$Dosen->id}}" >{{$Dosen->nama}}</option>'+
+                                    '<option value="{{$Dosen->dosen_id}}" >{{$Dosen->nama}}</option>'+
                                     '@endforeach'+
                                 '</select>'+                     
                                 '</div>'+
@@ -423,5 +418,11 @@
 
         });
 </script> -->
+<script>
+	$(document).on('click', '.btn_remove', function(){  
+           var button_id = $(this).attr("id");   
+           $('#row'+button_id+'').remove();  
+      });
+</script>
 
 @stop
